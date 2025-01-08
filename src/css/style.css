@@ -87,3 +87,14 @@ html {
   padding-bottom: 10px;
   width: 100%;
 }
+
+.Titel {
+  width: 100%;
+  height: auto;
+  p{
+    font-size: 10vw;
+    font-family: "Russo One", sans-serif;
+    text-transform: uppercase;
+    line-height: 175px;
+  }
+}

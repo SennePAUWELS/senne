@@ -29,6 +29,7 @@ html {
 }
 
 .button {
+  width: -moz-fit-content;
   width: fit-content;
   padding: 3px 15px;
   color: white;
@@ -42,12 +43,24 @@ html {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  i {
-    font-size: 50px;
-  }
+}
+.ham i {
+  font-size: 50px;
 }
 
-.hamburger
-{
+.hamburger {
   display: none;
+}
+.hamburger:checked ~ .nav-menu {
+  top: 82px;
+}
+
+.nav-menu {
+  width: 20%;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: -300%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }

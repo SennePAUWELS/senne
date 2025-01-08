@@ -55,6 +55,7 @@ html {
   padding: 17px 100px 4px 100px;
   border-radius: 0 0 30px 30px;
 }
+
 .ham i {
   font-size: 50px;
   display: flex;
@@ -63,11 +64,13 @@ html {
 .hamburger {
   display: none;
 }
+
 .hamburger:checked ~ .nav-menu {
   top: 82px;
 }
 
 .nav-menu {
+  width: -moz-fit-content;
   width: fit-content;
   height: auto;
   padding: 26px 56px;
@@ -81,14 +84,36 @@ html {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  z-index: 100;
+}
 
-  a {
-    font-size: 25px;
+.nav-menu a {
+  font-size: 25px;
+  font-family: 'Russo One', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.Titel {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  p {
+    font-size: 21.5vw;
     font-family: 'Russo One', sans-serif;
-    color: #fff;
-    text-decoration: none;
-    border-bottom: solid 1px white;
-    padding-bottom: 10px;
-    width: 100%;
+    text-align: justify;
+    text-transform: uppercase;
+    line-height: 0.8;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    word-spacing: 100vw;
+    margin: 0;
   }
 }

@@ -77,7 +77,9 @@ html {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  z-index: 100;
 }
+
 .nav-menu a {
   font-size: 25px;
   font-family: "Russo One", sans-serif;
@@ -91,10 +93,19 @@ html {
 .Titel {
   width: 100%;
   height: auto;
-  p{
-    font-size: 10vw;
-    font-family: "Russo One", sans-serif;
-    text-transform: uppercase;
-    line-height: 175px;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Titel p {
+  font-size: 21.5vw;
+  font-family: "Russo One", sans-serif;
+  text-align: justify;
+  text-transform: uppercase;
+  line-height: 0.8;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  word-spacing: 100vw;
+  margin: 0;
 }

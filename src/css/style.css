@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&family=Russo+One&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  font-family: "Ruda", sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(180deg, #521d0d 0%, #2d1511 48.5%, #521d0d 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+}

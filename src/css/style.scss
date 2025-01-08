@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&family=Russo+One&display=swap');
+
+$font-body: 'Ruda', sans-serif;
+$font-title: 'Russo One', sans-serif;
+
+$color-white: #fff;
+$gradient: linear-gradient(180deg, #521d0d 0%, #2d1511 48.5%, #521d0d 100%);
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  font-family: $font-body;
+  font-size: 1rem;
+  background: $gradient;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+}

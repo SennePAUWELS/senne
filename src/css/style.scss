@@ -14,14 +14,14 @@ html {
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  font-family: $font-body;
+  font-family: 'Ruda', sans-serif;
   font-size: 1rem;
-  background: $gradient;
+  background: linear-gradient(180deg, #521d0d 0%, #2d1511 48.5%, #521d0d 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
-  color: $color-white;
+  color: #fff;
 }
 
 .nav {
@@ -36,6 +36,7 @@ html {
 }
 
 .button {
+  width: -moz-fit-content;
   width: fit-content;
   padding: 3px 15px;
   color: white;
@@ -48,26 +49,46 @@ html {
 .ham {
   position: absolute;
   left: 50%;
+  top: 0;
   transform: translate(-50%, 0);
-  i {
-    font-size: 50px;
-  }
+  background-color: #251311;
+  padding: 17px 100px 4px 100px;
+  border-radius: 0 0 30px 30px;
+}
+.ham i {
+  font-size: 50px;
+  display: flex;
 }
 
 .hamburger {
   display: none;
-
-  &:checked ~ .nav-menu {
-    top: 82px;
-  }
+}
+.hamburger:checked ~ .nav-menu {
+  top: 82px;
 }
 
 .nav-menu {
-  width: 20%;
-  height: 100px;
-  background-color: red;
+  width: fit-content;
+  height: auto;
+  padding: 26px 56px;
+  background-color: rgb(61, 7, 7);
   position: absolute;
-  top: -300%;
+  top: -10000%;
   left: 50%;
   transform: translate(-50%, 0);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+  a {
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: solid 1px white;
+    padding-bottom: 10px;
+    width: 100%;
+  }
 }

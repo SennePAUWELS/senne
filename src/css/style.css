@@ -42,20 +42,28 @@ html {
 .ham {
   position: absolute;
   left: 50%;
+  top: 0;
   transform: translate(-50%, 0);
+  background-color: #251311;
+  padding: 17px 100px 4px 100px;
+  border-radius: 0 0 30px 30px;
 }
+
 .ham i {
   font-size: 50px;
+  display: flex;
 }
 
 .hamburger {
   display: none;
 }
+
 .hamburger:checked ~ .nav-menu {
   top: 82px;
 }
 
 .nav-menu {
+  width: -moz-fit-content;
   width: fit-content;
   height: auto;
   padding: 26px 56px;
@@ -69,14 +77,13 @@ html {
   flex-direction: column;
   gap: 10px;
   align-items: center;
- a {
+}
+.nav-menu a {
   font-size: 25px;
-  font-family: "Russo One", sans-serif ;
+  font-family: "Russo One", sans-serif;
   color: #fff;
   text-decoration: none;
   border-bottom: solid 1px white;
   padding-bottom: 10px;
   width: 100%;
- }
-
 }

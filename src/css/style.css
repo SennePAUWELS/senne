@@ -25,14 +25,29 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .button {
   width: fit-content;
-  padding: 7px 15px;
+  padding: 3px 15px;
   color: white;
   border: 1px solid white;
   font-family: "Russo One", sans-serif;
   font-size: 25px;
   text-decoration: none;
+}
+
+.ham {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  i {
+    font-size: 50px;
+  }
+}
+
+.hamburger
+{
+  display: none;
 }

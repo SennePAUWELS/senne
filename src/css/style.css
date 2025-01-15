@@ -137,7 +137,8 @@ html {
   height: auto;
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
+  flex-basis: calc(50% - 16.5px);
+  min-width: 350px;
   aspect-ratio: 1/1;
   p{
     padding: 0.5rem 0;
@@ -163,8 +164,9 @@ html {
   height: auto;
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
+  flex-basis: calc(50% - 16.5px);
   align-items: flex-end;
+  min-width: 350px;
   p{
     padding: 0.5rem 0;
   }
@@ -176,7 +178,7 @@ html {
 }
 
 .tekstbier {
-  flex-basis: 50%;
+  flex-basis: calc(50% - 16.5px);
   width: 100%;
   height: auto;
   display: flex;
@@ -196,7 +198,7 @@ html {
 }
 
 .tekstverhaal {
-  flex-basis: 50%;
+  flex-basis: calc(50% - 16.5px);
   width: 100%;
   height: auto;
   display: flex;

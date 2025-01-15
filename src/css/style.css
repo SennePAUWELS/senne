@@ -142,6 +142,7 @@ html {
   aspect-ratio: 1/1;
   p{
     padding: 0.5rem 0;
+    margin: 0;
   }
   img {
     width: 100%;
@@ -169,6 +170,7 @@ html {
   min-width: 350px;
   p{
     padding: 0.5rem 0;
+    margin: 0;
   }
   img {
     width: 100%;
@@ -216,3 +218,42 @@ html {
     margin: 0;
   }
 }
+
+@media (max-width: 991px) {
+  .tekstbier,
+  .tekstverhaal,
+  .afbeeldingbier,
+  .afbeeldingverhaal {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .verhaal
+   {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 991px) {
+  .bier, .verhaal
+   {
+     gap : 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .afbeeldingbier
+   {
+     align-items: flex-end;
+  }
+}
+
+@media (max-width: 991px) {
+  .uitleg
+   {
+     gap: 45px;
+  }
+}
+
+

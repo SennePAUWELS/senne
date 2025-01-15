@@ -114,3 +114,103 @@ html {
 .titel span {
   font-size: 25vw;
 }
+
+.uitleg {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.bier {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+
+.afbeeldingbier {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  aspect-ratio: 1/1;
+  p{
+    padding: 0.5rem 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.verhaal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+
+.afbeeldingverhaal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  align-items: flex-end;
+  p{
+    padding: 0.5rem 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.tekstbier {
+  flex-basis: 50%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 46px;
+    margin: 0;
+  }
+  p{
+    font-family: "Ruda", sans-serif;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+.tekstverhaal {
+  flex-basis: 50%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 46px;
+    margin: 0;
+  }
+  p{
+    font-family: "Ruda", sans-serif;
+    font-size: 16px;
+    margin: 0;
+  }
+}

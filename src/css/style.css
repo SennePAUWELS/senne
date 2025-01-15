@@ -90,14 +90,15 @@ html {
   width: 100%;
 }
 
-.Titel {
+.titel {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  user-select: none;
 }
-.Titel p {
+.titel p {
   font-size: 21.5vw;
   font-family: "Russo One", sans-serif;
   text-align: justify;
@@ -108,4 +109,8 @@ html {
   white-space: nowrap;
   word-spacing: 100vw;
   margin: 0;
+}
+
+.titel span {
+  font-size: 25vw;
 }

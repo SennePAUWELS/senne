@@ -309,7 +309,8 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 37px;
+  column-gap: 37px;
+  row-gap:60px ;
 }
 
 .locaties__card {

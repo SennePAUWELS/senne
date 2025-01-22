@@ -291,3 +291,37 @@ html {
     }
   }
 }
+
+.locaties {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  h2{
+    font-family: "Russo One", sans-serif;
+    font-size: 70px;
+    margin-bottom: 58px;
+  }
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+}
+
+.locaties__card {
+  height: 364px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1 ;
+  width: 100%;
+  p{
+    font-family: "Russo One", sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}

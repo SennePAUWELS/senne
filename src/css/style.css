@@ -389,6 +389,7 @@ footer {
 }
 
 .footer__links {
+  flex-basis: 20%;
   ul {
     list-style: none;
     display: flex;
@@ -410,6 +411,7 @@ footer {
 }
 
 .footer__middel {
+  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -443,6 +445,7 @@ footer {
 }
 
 .footer__rechts {
+ flex-basis: 20%;
   h3 {
     font-family: "Russo One", sans-serif;
     font-size: 40px;
@@ -468,6 +471,7 @@ footer {
 }
 
 .copyright_r {
+  flex-basis: 33.33%;
   span {
     font-family: "Russo One", sans-serif;
     font-size: 17px;
@@ -475,6 +479,7 @@ footer {
 }
 
 .copyright_icons {
+  flex-basis: 33.33%;
   ul {
     margin: 0;
     padding: 0;
@@ -493,4 +498,7 @@ footer {
       }
     }
   }
+}
+.copyright_logo{
+  flex-basis: 33.33%;
 }

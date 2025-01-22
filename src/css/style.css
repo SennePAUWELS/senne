@@ -332,3 +332,33 @@ html {
     object-position: center;
   }
 }
+
+.call_to_action{
+  width:100% ;
+  height: 157px;
+  margin-top:70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/cta.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    span{
+      font-family: "Russo One", sans-serif;
+      font-size: 50px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+}

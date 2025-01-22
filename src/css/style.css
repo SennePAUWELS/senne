@@ -469,7 +469,28 @@ footer {
 
 .copyright_r {
   span {
-    font-family: "Russo One", sans-serif ;
+    font-family: "Russo One", sans-serif;
     font-size: 17px;
+  }
+}
+
+.copyright_icons {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap :35px;
+    align-items: center;
+    
+    li {
+      margin: 0;
+      padding: 0;
+      a{
+        font-size: 25px;
+        color: #fff;
+      }
+    }
   }
 }

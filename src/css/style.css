@@ -371,3 +371,17 @@ html {
     }
   }
 }
+
+footer{
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(101deg, #000 -15.75%, #582A2A 133.09%);
+  padding:50px 0;
+  .container{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  }
+}

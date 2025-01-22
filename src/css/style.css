@@ -442,12 +442,34 @@ footer {
   }
 }
 
-.footer__rechts{
-  h3{
-    font-family:"Russo One", sans-serif;
-  font-size: 40px;
-  text-transform: uppercase;
-  text-align: right;
+.footer__rechts {
+  h3 {
+    font-family: "Russo One", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: right;
   }
 }
 
+.copyright {
+  width: 100%;
+  height: auto;
+  background-color: #3b0c0c;
+  .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+}
+
+.copyright_r {
+  span {
+    font-family: "Russo One", sans-serif ;
+    font-size: 17px;
+  }
+}

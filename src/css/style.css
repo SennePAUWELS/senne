@@ -23,6 +23,7 @@ html {
   height: auto;
   padding: 18px 0;
   position: fixed;
+  z-index: 1000;
 
   .container {
     display: flex;

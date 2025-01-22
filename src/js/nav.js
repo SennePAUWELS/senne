@@ -1,9 +1,14 @@
 const navmenu = function () {
-  const navmenu = document.querySelector(".js-navmenu");
-  navmenu.addEventListener("change", function (e) {
+  const navmenu = document.querySelector('.js-navmenu');
+  const overlay = document.querySelector('.o-overlay');
+
+  navmenu.addEventListener('change', function (e) {
     if (navmenu.checked) {
-      console.log("open");
+      overlay.style.display = 'block';
+    } else {
+      overlay.style.display = 'none';
     }
   });
 };
-document.addEventListener("DOMContentLoaded", navmenu);
+
+document.addEventListener('DOMContentLoaded', navmenu);

@@ -360,5 +360,13 @@ html {
       color: #fff;
       text-transform: uppercase;
     }
+    hr{
+      margin: 0;
+      border: none;
+      width: 2px;
+      height: 80px;
+      background-color: #fff;
+      display: inline-block;
+    }
   }
 }

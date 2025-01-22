@@ -545,7 +545,25 @@ footer {
       height: 52px;
       width: 293px;
       background-color: #fff;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
+    input::placeholder {
+      font-family: "Russo One", sans-serif;
+      font-size: 24px;
+      color: #C9C9C9;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(3px);
+    }
+
     button {
       position: absolute;
       right: 20px;
@@ -553,6 +571,15 @@ footer {
       transform: translateY(-50%);
       border-radius: 50%;
       background-color: #000;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1/1;
+      width: 37px;
+      height: 37px;
+      background-color: #303030;
     }
     > div {
       position: relative;

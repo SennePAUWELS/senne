@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&family=Russo+One&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 body,
 html {
@@ -23,11 +22,14 @@ html {
   width: 100%;
   height: auto;
   padding: 18px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+  position: fixed;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .button {
@@ -51,6 +53,30 @@ html {
   border-radius: 0 0 30px 30px;
 }
 
+@media (max-width: 767px) {
+  .ham {
+    padding: 17px 40px 4px 40px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    min-height: 74px;
+
+    .button {
+      display: none;
+    }
+
+    .nav-logo {
+      display: none;
+    }
+  }
+}
+
 .ham i {
   font-size: 50px;
   display: flex;
@@ -69,7 +95,7 @@ html {
   width: fit-content;
   height: auto;
   padding: 26px 56px;
-  background-color: rgb(61, 7, 7);
+  background-color: #251311;
   position: absolute;
   top: -10000%;
   left: 50%;
@@ -80,6 +106,10 @@ html {
   gap: 10px;
   align-items: center;
   z-index: 100;
+
+  a:last-child {
+    border-bottom: none;
+  }
 }
 
 .nav-menu a {
@@ -90,6 +120,9 @@ html {
   border-bottom: solid 1px white;
   padding-bottom: 10px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .titel {
@@ -99,6 +132,7 @@ html {
   flex-direction: row;
   justify-content: center;
   user-select: none;
+  padding-top: 81.5px;
 }
 .titel p {
   font-size: 21.5vw;
@@ -179,6 +213,12 @@ html {
     height: 100%;
     object-fit: contain;
   }
+}
+
+@media (max-width: 575px) {
+   .afbeeldingverhaal, .afbeeldingbier {
+    min-width: unset;
+   }
 }
 
 .tekstbier {
@@ -278,6 +318,16 @@ html {
       text-align: justify;
     }
   }
+
+  @media (max-width: 1199px) {
+    .productje__tekst {
+      p {
+        flex-basis: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+
   .productje__tags {
     display: flex;
     flex-direction: row;
@@ -373,11 +423,39 @@ html {
   }
 }
 
+@media (min-width: 500px) and (max-width: 700px) {
+  .call_to_action {
+    a {
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  .call_to_action {
+    a {
+      gap: 30px;
+
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 footer {
   width: 100%;
-  height: 350px;
+  min-height: 350px;
+  height: auto;
   background: linear-gradient(101deg, #000 -15.75%, #582a2a 133.09%);
   padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
   .container {
     display: flex;
     flex-direction: row;
@@ -385,11 +463,49 @@ footer {
     justify-content: space-between;
     gap: 36px;
     height: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1199px) {
+  footer {
+    .container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  .footer__links {
+    flex-basis: calc(50% - 24px);
+  }
+
+  .footer__middel {
+    flex-basis: calc(100% - 24px);
+    order: 3;
+  }
+
+  .footer__rechts {
+    flex-basis: calc(50% - 24px);
+  }
+}
+
+@media (max-width: 575px) {
+  footer {
+    .container {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  }
+
+  .footer__rechts {
+    h3 {
+      text-align: center !important;
+    }
   }
 }
 
 .footer__links {
-  flex-basis: 20%;
+  flex-basis: calc(20% - 24px);
   ul {
     list-style: none;
     display: flex;
@@ -411,7 +527,7 @@ footer {
 }
 
 .footer__middel {
-  flex-basis: 60%;
+  flex-basis: calc(60% - 24px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -445,7 +561,7 @@ footer {
 }
 
 .footer__rechts {
- flex-basis: 20%;
+  flex-basis: calc(20% - 24px);
   h3 {
     font-family: "Russo One", sans-serif;
     font-size: 40px;
@@ -468,6 +584,14 @@ footer {
     justify-content: space-between;
     padding: 16px 0;
   }
+}
+
+@media (max-width: 767px) {
+   .copyright {
+    .container {
+      flex-direction: column;
+    }
+   }
 }
 
 .copyright_r {

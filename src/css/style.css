@@ -15,7 +15,7 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
-  color: hsl(0,0%,100%);
+  color: hsl(0, 0%, 100%);
 }
 
 .nav {
@@ -296,7 +296,7 @@ html {
   width: 100%;
   height: auto;
   margin-top: 60px;
-  h2{
+  h2 {
     font-family: "Russo One", sans-serif;
     font-size: 70px;
     margin-bottom: 58px;
@@ -310,7 +310,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 37px;
-  row-gap:60px ;
+  row-gap: 60px;
 }
 
 .locaties__card {
@@ -319,8 +319,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1 ;
-  p{
+  flex-grow: 1;
+  p {
     font-family: "Russo One", sans-serif;
     font-size: 12px;
     margin-top: 10px;
@@ -333,19 +333,19 @@ html {
   }
 }
 
-.call_to_action{
-  width:100% ;
+.call_to_action {
+  width: 100%;
   height: 157px;
-  margin-top:70px;
+  margin-top: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-image: url('../img/cta.png');
+  background-image: url("../img/cta.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  a{
+  a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -354,13 +354,13 @@ html {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    span{
+    span {
       font-family: "Russo One", sans-serif;
       font-size: 50px;
       color: #fff;
       text-transform: uppercase;
     }
-    hr{
+    hr {
       margin: 0;
       border: none;
       width: 2px;
@@ -372,16 +372,69 @@ html {
   }
 }
 
-footer{
+footer {
   width: 100%;
   height: 350px;
-  background: linear-gradient(101deg, #000 -15.75%, #582A2A 133.09%);
-  padding:50px 0;
-  .container{
+  background: linear-gradient(101deg, #000 -15.75%, #582a2a 133.09%);
+  padding: 50px 0;
+  .container {
     display: flex;
-  flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+    height: 100%;
+  }
+}
+
+.footer__links {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0;
+      padding: 0;
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-family: "Russo One", sans-serif;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.footer__middel {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 36px;
+  gap: 5px;
+  h2 {
+    font-family: "Russo One", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  form {
+    label {
+      display: none;
+    }
+    input {
+      height: 52px;
+      width: 293px;
+      background-color: #fff;
+    }
+    button {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translate(-50%);
+    }
+    > div {
+      position: relative;
+    }
   }
 }
